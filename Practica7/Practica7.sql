@@ -10,7 +10,7 @@ FROM Direccion
 INNER JOIN Empleadoos on Direccion.idPer = Empleadoos.idPer
 
  
-CREATE CLIENTES_INFO AS 
+CREATE VIEW CLIENTES_INFO AS 
 SELECT id_cli,nombre_cli, rfc, calle
 FROM Clientes 
 LEFT JOIN RFC on Clientes.idPer = RFC.idPer
