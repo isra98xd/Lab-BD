@@ -16,7 +16,7 @@ FROM Clientes
 LEFT JOIN RFC on Clientes.idPer = RFC.idPer
 LEFT JOIN Direccion on Clientes.idPer = Direccion.idPer
 
-CREATE CLIENTES_TELEFONOS AS 
+CREATE VIEW CLIENTES_TELEFONOS AS 
 SELECT id_cli,nombre_cli,telefono
 FROM Clientes 
 LEFT JOIN Telefonos on Clientes.idPer = Telefonos.idPer
